@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+    box-shadow: 0px 10px 20px rgb(216, 215, 215);
+}
+
+.logo{
+    margin-left: 50px;
+}
+
+.logo:hover{
+    scale: 1.05;
+}
+
+.button>*{
+    border: none;
+    background-color: transparent;
+    color: rgba(22, 22, 22, 0.918);
+    font-size: larger;
+    padding: 10px;
+    transition: all 0.1s ease-in-out;
+
+}
+
+.button>*:hover{
+    scale: 1.1;
+    color: rgb(252,173,24);
+}
+
+.contact{
+    background-color: rgb(235, 155, 8);
+    color: white;
+    padding: 6px 22px;
+    font-size: medium;
+    border-radius: 15px;
+    box-shadow: 0 14px 22px rgb(196, 141, 40);
+    margin-left: 30px;    
+    margin-right: 80px;
+    transition: all 0.1s ease-in-out;
+}
+.contact:hover{
+    color: white;
+}
+
+
+.hi{
+    font-size: 6rem;
+    color: rgb(41, 29, 59);
+    margin: 60px;
+    margin-left: 70px;
+    margin-bottom: 40px;
+}
+
+.name{
+    color: rgb(252,167,35);
+    display: block;
+}
+
+.about{
+    color: rgba(141, 139, 139, 0.726);
+    font-weight:550;
+    font-size: large;
+    width: 32rem;
+    margin-left:90px;
+    letter-spacing: 3px;
+    line-height: 1.4;
+}
+
+.hire{
+    background-color: rgb(235, 155, 8);
+    color: white;
+    padding: 6px 22px;
+    font-size: medium;
+    border-radius: 15px;
+    box-shadow: 0 14px 22px rgb(196, 141, 40);
+    margin-left: 90px;    
+    margin-top: 30px;
+    margin-right: 80px;
+    border: none;
+    transition: all 0.1s ease-in-out;
+
+}
+
+.hire:hover{
+    scale: 1.05;
+}
+
+.resume{
+    margin-left: 10px;
+}
+
+.resume a {
+    text-decoration: none;
+    color: white;
+}
