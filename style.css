@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-image: radial-gradient(white, #cad7f5);
 }
 
 .header{
@@ -14,6 +17,17 @@
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.123);
     box-shadow: 0px 10px 20px rgb(216, 215, 215);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding:10px;
+    height: 100px;
+    z-index: 10;
+    width: 100%;
+    background-color: rgb(245, 235, 235);
+    background-image: radial-gradient(white, #cbd0db);
+
+
 }
 
 .logo{
@@ -30,6 +44,7 @@
     color: rgba(22, 22, 22, 0.918);
     font-size: larger;
     padding: 10px;
+    padding-top: 30px;
     transition: all 0.1s ease-in-out;
 
 }
@@ -104,4 +119,348 @@
 .resume a {
     text-decoration: none;
     color: white;
+}
+
+.twitter-icon a{
+    color: rgb(29,161,242);
+    text-decoration: none;
+}
+
+.twitter-icon{
+    animation: moveRandomly1 7s linear infinite alternate;
+    position: relative;
+    top: 180px;
+    left: -100px;
+    cursor: pointer;
+}
+
+.star-icon{
+    color: rgb(255,215,0);
+    animation: moveRandomly2 9s linear infinite alternate;
+    position: relative;
+    top: -50px;
+    left: -80px;
+    cursor: pointer;
+
+}
+.link-icon a{
+    text-decoration: none;
+    color: rgb(10,102,194);
+
+}
+
+.link-icon{
+    animation: moveRandomly3 7s linear infinite alternate;
+    position: relative;
+    top: 40px;
+    left: 120px;
+    cursor: pointer;
+}
+
+.git-icon a{
+    color: rgb(33,31,31);
+    text-decoration: none;
+
+}
+
+.git-icon{
+    animation: moveRandomly4 5s linear infinite alternate;
+    position: relative;
+    top: -50px;
+    left: 100px;
+    cursor: pointer;
+}
+
+
+.icons{
+    font-size: 30px;
+}
+
+.main{
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.profile{
+     margin-top: 150px;
+     margin-left: 250px;
+
+
+}
+
+@keyframes moveRandomly1 {
+    0% {
+        transform: translate(100px, 100px);
+      }
+      100% {
+        transform: translate(-100px, -100px);
+      }
+  }
+  
+  @keyframes moveRandomly2 {
+    0% {
+        transform: translate(100px, 100px);
+      }
+      100% {
+        transform: translate(-100px, -100px);
+      }
+  }
+  
+  @keyframes moveRandomly3 {
+    0% {
+        transform: translate(100px, 100px);
+      }
+      100% {
+        transform: translate(-100px, -100px);
+      }
+  }
+  
+  @keyframes moveRandomly4 {
+    0% {
+        transform: translate(100px, -100px);
+      }
+      100% {
+        transform: translate(-100px, 100px);
+      }
+  }
+  
+  
+  
+.awesome{
+    font-size: 3rem;
+    color: rgb(41, 29, 59);
+    line-height: 1.6;
+    margin: 60px;
+    margin-left: 80px;
+    margin-bottom: 40px;
+    letter-spacing: 1.2 rem;
+}
+
+.servies-detail{
+    color: #9ca5ba;
+    font-weight:500;
+    font-size: 18px;
+    margin-left:10px;
+    margin-right: 80px;
+    padding: 20px;
+    line-height: 28px;
+    text-align: justify;
+    
+}
+
+.servies-detail a{
+    text-decoration: none;
+    color: #9ca5ba;
+}
+
+
+.card{
+    background-color: white;
+    border-radius: 15px;
+    width: 250px;
+    margin: 50px 10px;
+    min-height: 240px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img{
+    margin: 20px auto;
+}
+
+.card h3{
+    font-size: large;
+    letter-spacing: 1px;
+    color: rgb(24, 24, 24);
+    text-align: center;
+}
+
+.card p{
+    margin-top: 10px;
+    text-align: center;
+    color: #9ca5ba;
+    font-weight: 500;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    
+}
+
+.tech{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px auto;
+}
+
+.tech img{
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+
+}
+
+
+.showcased{
+    margin-top: -35px;
+    margin-left: 70px;
+}
+
+
+.project-cards{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    margin: 50px 60px;
+}
+
+
+
+.project-card{
+    width: 360px;
+    background-color: #ffffff; /* Set the background color to white */
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+
+}
+
+.project-img{
+    width: 300px;
+    object-fit: cover;
+    border-top-left-radius: 2xl;
+    border-top-right-radius: 2xl;
+
+}
+
+.outer-eye{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.75rem; 
+}
+.eye-icon{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.eye{
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    opacity: 1;
+    color: white;
+}
+
+
+.outer-git{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.75rem; 
+}
+
+.github-icon{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.git{
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    color: white;
+}
+
+
+.custom-section {
+    padding: 0.5rem;
+}
+
+.custom-heading {
+    color: rgb(59, 59, 59) ;/* You can replace this color with the desired value */
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.custom-paragraph {
+    color: #9ca5ba;
+    font-size: 14px;
+    padding-top: 0.5rem;
+}
+
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    padding: 30px;
+    background-color: white;
+    margin-left: 100px;
+    margin-bottom: 80px;
+    border-radius: 15px;
+}
+
+.input-box{
+    padding: 15px;
+    border-radius: 8px;
+    outline: none;
+    border: 0.8px solid;
+    border-color: rgb(235, 155, 8);
+    font-size: 1.1rem;
+}
+
+
+.text-box{
+    border-color: rgb(235, 155, 8);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    outline: none;
+    resize: vertical;
+}
+
+
+.submit-btn{
+    align-self: self-start;
+    padding: 8px 30px;
+    margin-top: 40px;
+    background-color: rgb(245, 179, 57);
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 16px;
+    box-shadow: 0 14px 22px rgb(196, 141, 40);
+
 }

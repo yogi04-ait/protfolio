@@ -1,37 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MY Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <img src="./assest/images/logo.png" width="90px" class="logo" />
-      <div class="button">
-        <button>About</button>
-        <button>Skills</button>
-        <button>Project</button>
-        <button class="contact">Contact</button>
-      </div>
-    </header>
-    <main class="main">
-      <article>
-        <h1 class="hi">Hi! I'm <span class="name">Yogesh Aithani</span></h1>
-        <p class="about" >
-          Enthusiastic Frontend Developer dedicated to crafting visually
-          captivating and user-centric web applications. I'm driven to
-          collaborate, enhance my skill set, and contribute meaningfully to the
-          industry.
-        </p>
-        <button class="hire">Hire me</button>
-        <button class="hire resume"><a href="./assest/Yogesh's Resume.pdf" download>⬇ Resume</a></button>
-      </article>
-      <article>
-        
 
-      </article>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MY Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<script src="https://kit.fontawesome.com/aee059573b.js" crossorigin="anonymous"></script>
+
+<body>
+  <header class="header">
+    <img src="./assest/images/logo.png" width="120px" class="logo" />
+    <div class="button">
+      <button>About</button>
+      <button>Skills</button>
+      <button>Project</button>
+      <button class="contact">Contact</button>
+    </div>
+  </header>
+  <main class="main">
+
+    <article>
+      <h1 class="hi">Hi! I'm <span class="name">Yogesh Aithani</span></h1>
+      <p class="about">
+        Enthusiastic Frontend Developer dedicated to crafting visually
+        captivating and user-centric web applications. I'm driven to
+        collaborate, enhance my skill set, and contribute meaningfully to the
+        industry.
+      </p>
+      <button class="hire">Hire me</button>
+      <button class="hire resume"><a href="./assest/Yogesh's Resume.pdf" download>⬇ Resume</a></button>
+    </article>
+
+    <article class="profile">
+      <div class="twitter-icon icons"><a href="https://twitter.com/Knowledge_Hive_" target="_blank"><i
+            class="fa-brands fa-twitter"></i></a></div>
+      <div class="star-icon icons"><a><i class="fa-solid fa-star"></i></a></i></div>
+      <div class="link-icon icons"><a target="_blank" href="https://www.linkedin.com/in/yogesh-aithani-064b591a4/"><i
+            class="fa-brands fa-linkedin"></i></a></div>
+      <div class="git-icon icons"><a target="_blank" href="https://github.com/yogi04-ait"><i
+            class="fa-brands fa-github"></i></a></div>
+    </article>
+  </main>
+
+  <section>
+
+    <div class="services">
+      <h2 class="awesome">My awesome<span class="name">Services</span></h>
+
+        <p class="servies-detail">
+          I am a dedicated front-end developer with a focus on responsive web development and user interface design.
+          Proficient in React.js, HTML5, CSS3, and JavaScript, I transform ideas into reality through meticulous code
+          and
+          smooth interactions. My work results in visually captivating and highly functional web applications. For
+          collaborations, job opportunities, or any web development inquiries, feel free to reach out to me at
+          <a href="mailto:yogesh_aithani@outlook.com">yogesh_aithani@outlook.com</a>. Let's collaborate and craft
+          exceptional digital experiences together!
+        </p>
+
+    </div>
+  </section>
+  <section class="skills">
+    <div class="cards">
+      <div class="card" data-tilt>
+        <img src="./assest/services/santa1.png" width="60px">
+        <h3>Frontend Developer</h3>
+        <p>If you have a unique web application idea, I can turn it into reality.</p>
+      </div>
+      <div class="card" data-tilt>
+        <img src="./assest/services/santa2.png" width="60px">
+        <h3>React Developer
+        </h3>
+        <p>I can build powerful single-page applications (SPAs) and dynamic user interfaces.</p>
+      </div>
+      <div class="card" data-tilt>
+        <img src="./assest/services/santa3.png" width="60px">
+        <h3>Responsive Web development</h3>
+        <p>I specialize in creating visually appealing and responsive web applications.</p>
+      </div>
+      <div class="card" data-tilt>
+        <img src="./assest/services/santa4.png" width="60px">
+        <h3>User Interface Design</h3>
+        <p>With my keen eye for design and understanding of user experience principles, I can create captivating and
+          user-friendly interfaces.</p>
+      </div>
+    </div>
+
+    <div class="tech">
+      <img width="120px" data-tilt src="./assest/tech/reactjs.png">
+      <img width="120px" data-tilt src="./assest/tech/html.png">
+      <img width="120px" data-tilt src="./assest/tech/javascript.png">
+      <img width="120px" data-tilt src="./assest/tech/css.png">
+      <img width="120px" data-tilt src="./assest/tech/tailwind.png">
+      <img width="120px" data-tilt src="./assest/tech/git.png">
+      <img width="120px" data-tilt src="./assest/tech/redux.png">
+    </div>
+
+  </section>
+
+  <section>
+
+    <div class="services ">
+      <h2 class="awesome">My recent
+        <span class="name">Projects</span>
+      </h2>
+
+      <p class="servies-detail showcased">
+        My showcased projects provide tangible examples of my skills and experience, featuring brief descriptions, code
+        repository links, and live demos. They demonstrate my proficiency in problem-solving, diverse technology use,
+        and effective project management.
+      </p>
+
+    </div>
+
+    <div class="project-cards">
+      <div class="project-card" data-tilt>
+        <img class="project-img" width="300px" height="200px" src="./assest/projects/foodiefast.png">
+        <a href="https://lustrous-torte-2d5468.netlify.app/" target="_blank" class="outer-eye">
+          <div class="eye-icon"><i class="fa-regular fa-eye eye"></i></div>
+      </a>
+        <a href="https://github.com/yogi04-ait/food-delivery" target="_blank" class="outer-git">
+          <div class="github-icon"><i class="fa-brands fa-github git"></i></div>
+        </a>
+        <section class="custom-section">
+          <h3 class="custom-heading">Food Delivery Web App</h3>
+          <p class="custom-paragraph">Created a dynamic food delivery application using React., Tailwind and Parcel,
+            seamlessly integrating live
+            Swiggy APIs. This project showcases my proficiency in web development, API integration, and user interface
+            design.</p>
+        </section>
+      </div>
+ 
+      <div class="project-card" data-tilt>
+        <img class="project-img" width="300px" height="200px" src="./assest/projects/youtube.png">
+        <a href="https://beamish-crisp-f4265f.netlify.app/" target="_blank" class="outer-eye">
+          <div class="eye-icon"><i class="fa-regular fa-eye eye"></i></div>
+        </a>
+        <a href="https://github.com/yogi04-ait/youtube-clone" target="_blank" class="outer-git">
+          <div class="github-icon"><i class="fa-brands fa-github git"></i></div>
+        </a>
+        <section class="custom-section">
+          <h3 class="custom-heading">Video Streaming Web App</h3>
+          <p class="custom-paragraph">
+            Developed a robust web application for video streaming, leveraging the live API of YouTube. Implemented
+            cutting-edge features, including a dynamic search list suggestion with debouncing to optimize user
+            experience</p>
+        </section>
+      </div>
+
+      <div class="project-card" data-tilt>
+        <img class="project-img" width="300px" height="200px" src="./assest/projects/netflix.png">
+        <a class="outer-eye">
+          <div class="eye-icon"><i class="fa-regular fa-eye eye"></i></div>
+        </a>
+        <a href="https://github.com/yogi04-ait/Netflix-gpt" target="_blank" class="outer-git">
+          <div class="github-icon"><i class="fa-brands fa-github git"></i></div>
+        </a>
+        <section class="custom-section">
+          <h3 class="custom-heading">NetflixGpt</h3>
+          <p class="custom-paragraph">Developed a Netflix-inspired web app using React, Tailwind CSS, React Redux, and
+            Redux Toolkit. Integrated TMDB API for dynamic movie details and trailers.</p>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <section>
+
+    <h2 class="awesome">Get in touch
+      <span class="name">contacts</span>
+    </h2>
+    <form class="form" action="" id="form1">
+        <label for="name">Your Name</label> <br>
+        <input class="input-box" type="text" placeholder="What's your good name?" name="name" id="name"> <br>
+    
+        <label for="email">Your Email</label> <br>
+        <input class="input-box" type="email" placeholder="What's your web address?" name="email" id="email"> <br>
+    
+        <label for="message">Your Message</label> <br>
+        <textarea class="text-box" name="message" placeholder="What you want to say?" id="message" cols="30" rows="10"></textarea>
+    
+        <button class="submit-btn" type="submit" form="form1" value="Submit">Send</button>
+    </form>
+    
+
+  </section>
+  <script src="tilt.js"></script>
+</body>
+
 </html>
