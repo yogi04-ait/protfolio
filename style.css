@@ -8,30 +8,32 @@
 
 body{
     background-image: radial-gradient(white, #cad7f5);
+
 }
 
-.header{
+
+.header {
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    align-items: flex-start;
+    padding-top: 1.04vw;
+    padding-bottom: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.123);
     box-shadow: 0px 10px 20px rgb(216, 215, 215);
     position: fixed;
     top: 0;
     left: 0;
-    padding:10px;
+    padding: 0.6vw;
     height: 100px;
     z-index: 10;
     width: 100%;
-    background-color: rgb(245, 235, 235);
-    background-image: radial-gradient(white, #cbd0db);
+    background-color: rgba(245, 235, 235, 0.6); 
+    backdrop-filter: blur(10px); 
+  }
 
-
-}
 
 .logo{
-    margin-left: 50px;
+    margin-left: 2.6vw;
 }
 
 .logo:hover{
@@ -43,54 +45,72 @@ body{
     background-color: transparent;
     color: rgba(22, 22, 22, 0.918);
     font-size: larger;
-    padding: 10px;
+    padding: 0.6vw;
     padding-top: 30px;
+    cursor: pointer;
     transition: all 0.1s ease-in-out;
 
 }
 
+.button{
+    margin-right: 1.667vw;
+}
+
 .button>*:hover{
     scale: 1.1;
-    color: rgb(252,173,24);
+    color: rgb(252,170,28);
 }
 
 .contact{
     background-color: rgb(235, 155, 8);
     color: white;
-    padding: 6px 22px;
+    padding: 5px 24px;
     font-size: medium;
-    border-radius: 15px;
-    box-shadow: 0 14px 22px rgb(196, 141, 40);
-    margin-left: 30px;    
-    margin-right: 80px;
+    border-radius: 24px;
+    box-shadow: 0 18px 26px rgb(196, 141, 40);
+    margin-left: 1.5vw;  
+    margin-right: 4.1vw;
     transition: all 0.1s ease-in-out;
 }
 .contact:hover{
     color: white;
 }
 
+.ham-brg{
+    display: none;
+}
+
 
 .hi{
-    font-size: 6rem;
+    font-size: clamp(1rem, 5vw, 6rem);
     color: rgb(41, 29, 59);
-    margin: 60px;
-    margin-left: 70px;
-    margin-bottom: 40px;
+    margin-bottom: 2vw;
+    
+}
+
+.main{
+    display: flex;
+    gap: 3.4vw;
+    margin: 6vw;
+
 }
 
 .name{
     color: rgb(252,167,35);
     display: block;
+    white-space: nowrap;
+
 }
 
+
+
 .about{
-    color: rgba(141, 139, 139, 0.726);
+    color: rgb(156, 165, 186);
     font-weight:550;
-    font-size: large;
-    width: 32rem;
-    margin-left:90px;
-    letter-spacing: 3px;
-    line-height: 1.4;
+    font-size: 18px;
+    max-width: 35rem;
+    letter-spacing: 1px;
+    line-height: 1.2;
 }
 
 .hire{
@@ -100,12 +120,15 @@ body{
     font-size: medium;
     border-radius: 15px;
     box-shadow: 0 14px 22px rgb(196, 141, 40);
-    margin-left: 90px;    
-    margin-top: 30px;
-    margin-right: 80px;
     border: none;
     transition: all 0.1s ease-in-out;
 
+}
+
+.btn-hire{
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
 }
 
 .hire:hover{
@@ -176,17 +199,14 @@ body{
     font-size: 30px;
 }
 
-.main{
-    display: flex;
-    padding-top: 100px;
+.profile{
+    padding-top: 150px;
     padding-bottom: 30px;
 }
 
-.profile{
-     margin-top: 150px;
-     margin-left: 250px;
-
-
+.profile-cards{
+     margin-top: 8vw;
+     margin-left: 16vw;
 }
 
 @keyframes moveRandomly1 {
@@ -225,15 +245,15 @@ body{
       }
   }
   
-  
+.services{
+    margin: 6vw;
+
+}
   
 .awesome{
     font-size: 3rem;
     color: rgb(41, 29, 59);
     line-height: 1.6;
-    margin: 60px;
-    margin-left: 80px;
-    margin-bottom: 40px;
     letter-spacing: 1.2 rem;
 }
 
@@ -241,10 +261,8 @@ body{
     color: #9ca5ba;
     font-weight:500;
     font-size: 18px;
-    margin-left:10px;
-    margin-right: 80px;
-    padding: 20px;
-    line-height: 28px;
+    line-height: 24px;
+    margin-top: 30px;
     text-align: justify;
     
 }
@@ -289,8 +307,9 @@ body{
 .cards{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 30px;
+    margin: 5vw;
     
 }
 
@@ -299,7 +318,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    margin: 40px auto;
+    margin: 90px 8vw;
 }
 
 .tech img{
@@ -310,16 +329,14 @@ body{
 }
 
 
-.showcased{
-    margin-top: -35px;
-    margin-left: 70px;
-}
+
 
 
 .project-cards{
     display: flex;
     gap: 20px;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     margin: 50px 60px;
 }
 
@@ -423,11 +440,11 @@ body{
 .form{
     display: flex;
     flex-direction: column;
-    width: 700px;
+    margin-top: 30px;
+    width: clamp(420px,60vw,900px);
     padding: 30px;
+    padding-top: 60px;
     background-color: white;
-    margin-left: 100px;
-    margin-bottom: 80px;
     border-radius: 15px;
 }
 
@@ -463,4 +480,99 @@ body{
     border-radius: 16px;
     box-shadow: 0 14px 22px rgb(196, 141, 40);
 
+}
+
+
+@keyframes showMenu {
+    0% {
+        transform: scaleY(0);
+    }
+
+    80% {
+        transform: scaleY(1.2);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+
+
+@media screen and (max-width : 760px){
+    .profile-cards{
+        position: absolute;
+        padding-right: 5vw;
+    }
+
+    .button{
+        display: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 14px;
+        padding: 10px;
+        border-radius: 8px;
+        background-color: white;
+        display: hidden;
+        animation: showMenu 0.5s ease-in-out forwards;
+    
+    }
+
+    .button>*{
+        /* padding-top: 5px; */
+        padding: 0;
+        font-size: 16px;
+        font-weight: 500;
+        color: black;
+    }
+
+    .button>*:hover{
+        scale: 1;
+    }
+    
+
+
+      .menu-container{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 7px;
+
+      }
+
+      .contact{
+        margin-left: 0;
+        padding: 4px 22px;
+        border-radius: 16px;
+        color: white;
+        font-size: normal;
+      }
+    
+    
+      .ham-brg {
+        display: block;
+        /* background: transparent; */
+        cursor: pointer;
+        margin-top: 5px;
+        margin-bottom:18px ;
+        align-self: flex-end;
+        border: none;
+        padding: 20px;
+      }
+}
+
+
+
+@media screen and (max-width : 1020px){
+    .profile-cards{
+        position: absolute;
+        padding-right: 5vw;
+        margin-left: 30vh;
+    }
+
+    .main{
+        gap: 60px;
+    }
 }
