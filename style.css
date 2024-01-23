@@ -129,7 +129,7 @@ a{
 .hire{
     background-color: rgb(235, 155, 8);
     color: white;
-    padding: 6px 22px;
+    padding: 6px 3.7vw;
     font-size: medium;
     border-radius: 15px;
     box-shadow: 0 14px 22px rgb(196, 141, 40);
@@ -262,7 +262,6 @@ a{
   
 .services{
     margin: 6vw;
-
 }
   
 .awesome{
@@ -349,16 +348,16 @@ a{
 
 .project-cards{
     display: flex;
-    gap: 20px;
+    gap: 4vw;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin: 50px 60px;
+    margin: 50px 8vw;
 }
 
 
 
 .project-card{
-    width: 360px;
+    width: 340px;
     background-color: #ffffff; /* Set the background color to white */
     border-radius: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -456,7 +455,7 @@ a{
     display: flex;
     flex-direction: column;
     margin-top: 30px;
-    width: clamp(420px,60vw,900px);
+    width: clamp(360px,60vw,900px);
     padding: 30px;
     padding-top: 60px;
     background-color: white;
